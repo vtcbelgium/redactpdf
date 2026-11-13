@@ -1,0 +1,18 @@
+{
+  "authority": "NONE",
+  "externalActionsAuthorized": false,
+  "intent": {
+    "description": "Free client-side PDF sanitizer and text redactor.",
+    "mode": "LOCAL_STAGE2_CUSTOMIZED_SCRATCH_ONLY",
+    "modelId": "qwen2.5-coder:7b",
+    "runId": "dk01-redactpdf-1794529625",
+    "schema": "othrys.cortex.dk01-customizer.v1",
+    "slug": "redactpdf",
+    "task": "Permanently redact sensitive text, patterns, numbers, and coordinates from PDF documents entirely in the browser using client-side rendering with zero uploads.",
+    "titanId": "theia",
+    "title": "RedactPDF"
+  },
+  "intentSha256": "491f3bcaa3231baff64cd75e1248bd9d0479146f59c0fb59651a3729e6787e0c",
+  "paidApiCalls": 0,
+  "startedAt": "2026-11-13T00:27:05+00:00"
+}

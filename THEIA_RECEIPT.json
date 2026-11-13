@@ -1,0 +1,20 @@
+{
+  "customizedFields": {
+    "customFaqAnswer": "All data processed locally in your browser, no uploads or cookies.",
+    "customFaqQuestion": "How does RedactPDF ensure my data is safe?",
+    "eyebrow": "ZERO UPLOAD \u00b7 INSTANT",
+    "heroSubtitle": "Sanitize PDFs in your browser without leaving a trace.",
+    "inputPlaceholder": "Upload your PDF here",
+    "primaryCta": "REDACT NOW"
+  },
+  "customizedFieldsSha256": "0dcdcfb4c2ea242b2dfd2e2ff824a205d855f9db47d255275674026c443a2e63",
+  "inferenceMs": 3906,
+  "modelId": "qwen2.5-coder:7b",
+  "paidApiCalls": 0,
+  "promptSha256": "42551cac4e2ae7954c62dc9d0db05c291ced982c84dbab1e87c5ac04065367c8",
+  "runId": "dk01-redactpdf-1794529625",
+  "schema": "othrys.cortex.dk01-theia-receipt.v1",
+  "titanId": "theia",
+  "tokensIn": 297,
+  "tokensOut": 96
+}
