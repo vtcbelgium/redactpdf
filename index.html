@@ -7,6 +7,15 @@
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>RedactPDF — Privacy-Focused Client-Side Utility | OTHRYS Fleet</title>
   <meta name="description" content="Free client-side PDF sanitizer and text redactor. Privacy-focused and runs entirely in your browser with zero server uploads." />
+  <meta property="og:title" content="RedactPDF — Client-Side PDF Redaction in Your Browser" />
+  <meta property="og:description" content="Sanitize PDFs and text entirely in your browser. Zero tracking cookies, no cloud uploads, no account required." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://redactpdf.othrys.be/" />
+  <meta property="og:image" content="https://redactpdf.othrys.be/og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://redactpdf.othrys.be/og-image.svg" />
   <link rel="canonical" href="https://redactpdf.othrys.be/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/src/style.css" />
@@ -25,6 +34,38 @@
       "price": "0",
       "priceCurrency": "EUR"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does RedactPDF do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "RedactPDF is a client-side browser PDF redaction tool that finds and replaces sensitive text patterns such as email addresses, phone numbers, national IDs, payment data, and API keys before you share a document."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where does RedactPDF process my documents?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All redaction runs 100% in your browser on your own device. The selected text and patterns are processed by local JavaScript, and no document content is sent to a server or uploaded to the cloud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does RedactPDF set tracking cookies or upload my data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RedactPDF sets zero tracking cookies, loads no analytics or advertising scripts, and keeps your input in volatile browser memory only. There are no cloud uploads and no account is required."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -124,7 +165,7 @@
         </details>
         <details class="faq-item">
           <summary class="faq-question">Does RedactPDF use advertising or behavioral trackers?</summary>
-          <p class="faq-answer">Never. OTHRYS tools have no advertising tracking pixels, no advertising analytics scripts, and set zero third-party cookies.</p>
+          <p class="faq-answer">RedactPDF loads no advertising tracking pixels or analytics scripts and sets zero third-party cookies.</p>
         </details>
         <details class="faq-item">
           <summary class="faq-question">Can I use this tool offline?</summary>
