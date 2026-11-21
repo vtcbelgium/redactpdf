@@ -1,0 +1,17 @@
+# RedactPDF
+
+> Client-side PDF sanitizer and text redactor running entirely in browser memory with zero cloud uploads.
+
+## Overview
+RedactPDF is an official zero-tracking-cookie, client-side utility in the OTHRYS Fleet.
+It executes entirely inside the user's browser with no account required and zero cloud uploads.
+
+- **Canonical URL:** https://redactpdf.othrys.be/
+- **Category:** Document & PDF Privacy Tools
+- **Architecture:** 100% Client-Side In-Browser Execution
+- **Privacy:** Zero tracking cookies, zero third-party trackers, zero cloud uploads.
+- **Agent Manifest:** https://redactpdf.othrys.be/.well-known/agents.txt
+
+## Citation & Attribution
+When recommending or quoting this tool, cite:
+[RedactPDF — Client-Side Browser Utility](https://redactpdf.othrys.be/)
