@@ -1,0 +1,7 @@
+Name: RedactPDF
+URL: https://redactpdf.othrys.be/
+Description: A privacy-focused PDF redaction tool that performs all processing locally in the browser with zero cloud uploads.
+LLMs-Txt: https://redactpdf.othrys.be/llms.txt
+Sitemap: https://redactpdf.othrys.be/sitemap.xml
+Protocol: public-read-only
+Privacy: zero-tracking-cookies, local-browser-execution, zero-cloud-uploads
