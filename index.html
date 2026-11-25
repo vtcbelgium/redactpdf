@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none';" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none';" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>RedactPDF — Privacy-Focused Client-Side Utility | OTHRYS Fleet</title>
   <meta name="description" content="Free client-side PDF sanitizer and text redactor. Privacy-focused and runs entirely in your browser with zero server uploads." />
@@ -140,7 +140,22 @@
           <input id="custom-terms-input" type="text" placeholder="e.g. Acme Corp, John Smith, SecretProject" class="btn" style="width: 100%; padding: 0.6rem; background: var(--color-surface); border: 1px solid var(--color-border); color: var(--color-text); border-radius: 6px; text-align: left;" />
         </div>
 
-        <label for="app-input" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text);">Document Text to Sanitize</label>
+        <div class="pdf-upload-section">
+          <div id="pdf-dropzone" class="pdf-dropzone" tabindex="0" role="button" aria-label="Drop PDF file here or click to select a PDF">
+            <input id="pdf-file-input" type="file" accept="application/pdf,.pdf" class="sr-only-input" />
+            <div class="pdf-dropzone-title">Drop a PDF file here, or <span class="pdf-browse-link">choose a PDF</span></div>
+            <p class="pdf-dropzone-sub">Flattens auto-redacted and manual black boxes into clean page images with PDF metadata stripped. 100% local in your browser (max 25 MB).</p>
+          </div>
+          <div class="workspace-actions pdf-actions">
+            <button id="action-sample-pdf" class="btn btn-secondary" type="button">Load Sample PDF</button>
+            <button id="action-download-pdf" class="btn btn-primary" type="button" disabled>Download Redacted PDF</button>
+            <button id="action-undo-manual" class="btn btn-secondary" type="button" disabled>Undo Manual Box</button>
+            <button id="action-clear-pdf" class="btn btn-secondary" type="button" hidden>Clear PDF</button>
+          </div>
+          <div id="pdf-preview-region" class="pdf-preview-region" aria-live="polite" hidden></div>
+        </div>
+
+        <label for="app-input" style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem; color: var(--color-text);">Document Text to Sanitize (or Extracted PDF Text)</label>
         <textarea id="app-input" class="app-textarea" placeholder="Paste document content, contracts, or text payloads here..." rows="8" aria-label="Primary input"></textarea>
         
         <div class="workspace-actions">
